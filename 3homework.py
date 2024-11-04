@@ -73,6 +73,7 @@ class Tree:
 
 BTR = Tree()
 BTR.append(25)
+BTR.append(4)
 BTR.append(7)
 BTR.append(2)
 BTR.append(5)
