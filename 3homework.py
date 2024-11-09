@@ -19,8 +19,9 @@ class Tree:
         node = Note(value)
         if self.root is None:
             self.root = node
-        if not self.find(node.data):
-            self.check_value(self.root, node)
+        else:
+            if not self.find(node.data):
+                self.check_value(self.root, node)
     def find(self,node, root=None, iteration = 0):
         if root is None:
             root = self.root
