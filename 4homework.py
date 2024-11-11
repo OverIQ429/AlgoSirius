@@ -91,7 +91,7 @@ class RedBlackTree:
                 root.left = note
                 self.check_rules(note)
             else:
-                self.new_value(note, root.right)
+                self.new_value(note, root.left)
 
 
     def append(self, value):
