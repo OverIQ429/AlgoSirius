@@ -34,7 +34,7 @@ if __name__ == "__main__":
     g.add_edge(0, 2, 4)
 
 
-    source_vertex = int(input("Выберите вершину: "))
+    source_vertex = 0
     distances = g.bellman_ford(source_vertex)
 
     if distances is not None:
