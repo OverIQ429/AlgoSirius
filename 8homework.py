@@ -1,5 +1,6 @@
 import numpy as np
-
+import time
+start_time = time.time()
 class Algoritm_without_grafs():
     def __init__(self, list, aim):
         self.matrix = list
@@ -167,7 +168,6 @@ class Algoritm_without_grafs():
                 new_matrix.append(numbs)
             full_sum += new_matrix[zeros[0]][zeros[1]]
         print(full_sum)
-
 list = [[73695],
         [75756],
         [76889],
@@ -175,3 +175,5 @@ list = [[73695],
         [24995]]
 Algor = Algoritm_without_grafs(list, min)
 Algor.max_el()
+end_time = time.time()
+print(f"Время выполнения: {end_time - start_time:.12f} секунд")

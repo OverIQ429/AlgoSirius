@@ -1,3 +1,5 @@
+import time
+start_time = time.time()
 class Note:
     def __init__(self, value):
         self.date = value
@@ -297,3 +299,5 @@ BTR.delete(9)
 BTR.delete(3)
 BTR.print_tree()
 BTR.find(10)
+end_time = time.time()
+print(f"Время выполнения: {end_time - start_time:.12f} секунд")

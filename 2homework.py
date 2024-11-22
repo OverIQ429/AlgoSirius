@@ -1,3 +1,4 @@
+import time
 def math_relev(n_value, a_values, d_strings):
     relevant = []
     for symbol in d_strings:
@@ -50,4 +51,8 @@ def imput_values(n_value):
 n_value = int(input("Количество параметров в формуле ранжирования:"))
 while 100 < n_value < 1:
     n_value = int(input("Количество параметров в формуле ранжирования:"))
+start_time = time.time()
 imput_values(n_value)
+
+end_time = time.time()
+print(f"Время выполнения: {end_time - start_time:.12f} секунд")

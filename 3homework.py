@@ -1,3 +1,4 @@
+import time
 class Note:
     def __init__(self, date):
         self.data = date
@@ -70,7 +71,6 @@ class Tree:
         if root.left is not None:
             print("left from", root.data)
             self.print_tree(root.left)
-
 BTR = Tree()
 BTR.append(25)
 BTR.append(4)
@@ -82,4 +82,7 @@ BTR.append(10)
 BTR.print_tree()
 BTR.delete(4)
 BTR.print_tree()
-
+end_time = time.time()
+start_time = time.time()
+BTR.find(28)
+print(f"Время выполнения: {end_time - start_time:.30f} секунд")
